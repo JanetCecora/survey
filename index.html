@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Janets Survey</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="bloc_page">
+	    <header>
+            <h1 id="title">Survey Form</h1>
+	    </header>
+	
+        <!-- CONTENT BEGINS -->
+	    <div id="content">
+	        <p id="description">Let us know how we can improve freeCodeCamp</p>
+	        <div class="container">
+    
+                <form id="survey-form" action="/action_page.php">
+			  		<div class="row">
+				    	<div class="col-25">
+				      		<label for="name" id=name-label>* Name:</label>
+				    	</div>
+				    	<div class="col-75">
+				      		<input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required>
+				    	</div>
+				  	</div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				     		<label for="email" id=email-label>* Email:</label>
+				    	</div>
+				    	<div class="col-75">
+				     		<input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
+				    	</div>
+				  </div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				      		<label for="age" id=number-label>* Age:</label>
+				    	</div>
+				    	<div class="col-75">
+				      		<input type="number" id="number" min=1 max=110 name="age" class="input-field" placeholder="Age">
+				    	</div>
+				  	</div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				      		<label for="role">Which option best describes your current role?</label>
+				    	</div>
+				    	<div class="col-75">
+				      		<select id="dropdown" class="dropdown" name="role">
+				      			<option disabled value>Select an option</option>
+						        <option value="student">Student</option>
+						        <option value="job">Full time job</option>
+						        <option value="learner">Full time learner</option>
+						        <option value="NA">Prefer not to say</option>
+						        <option value="other">Other</option>
+				      		</select>
+				    	</div>
+				  	</div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				      		<label for="recommendation">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+				    	</div>
+				    	<div class="col-75">
+					        <ul>
+					          	<li class="radio"><label><input name="radio-buttons" value="1" type="radio" class=seal-type>Definitely</label></li>
+					          	<li class="radio"><label><input name="radio-buttons" value="2" type="radio" class=seal-type>Maybe</label></li>
+					          	<li class="radio"><label><input name="radio-buttons" value="3" type="radio" class=seal-type>Not sure</label></li>
+					        </ul>
+			      		</div>
+				  	</div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				      		<label for="role">What do you like most in FCC:</label>
+				    	</div>
+				    	<div class="col-75">
+					      	<select id="dropdown" class="dropdown" name="preferences">
+					        	<option disabled value>Select an option</option>
+					        	<option value="Challenges">Challenges</option>
+					        	<option value="Projects">Projects</option>
+					        	<option value="Community">Community</option>
+					        	<option value="Open-Source">Open-Source</option>
+					      	</select>
+				    	</div>
+				  	</div>
+
+				  	<div class="row">
+				    	<div class="col-25">
+				     		<label for="role">Things that should be improved in the future (Check all that apply):</label>
+				    	</div>
+				    	<div class="col-75">
+					    	<ul>
+					    		<li class="checkbox"><input type="checkbox" name="Front-end" value="Front-end">Front-end Projects</li>
+						  		<li class="checkbox"><input type="checkbox" name="Back-end" value="Back-end">Back-end Projects</li>
+						  		<li class="checkbox"><input type="checkbox" name="Data-visualization" value="Data-visualization">Data Visualization</li>
+						  		<li class="checkbox"><input type="checkbox" name="Challenges" value="Challenges">Challenges</li>
+						  		<li class="checkbox"><input type="checkbox" name="Open Source Community" value="Open Source Community">Open Source Community</li>
+						  		<li class="checkbox"><input type="checkbox" name="Gitter help rooms" value="Gitter help rooms">Gitter help rooms</li>
+						 		<li class="checkbox"><input type="checkbox" name="Videos" value="Videos">Videos</li>
+						  		<li class="checkbox"><input type="checkbox" name="City Meetups" value="City Meetups">City Meetups</li>
+						  		<li class="checkbox"><input type="checkbox" name="Wiki" value="Wiki">Wiki</li>
+						  		<li class="checkbox"><input type="checkbox" name="Forum" value="Forum">Forum</li>
+						  		<li class="checkbox"><input type="checkbox" name="Additional Courses" value="Additional Courses">Additional Courses</li>
+						  	</ul>
+				    	</div>
+				  	</div>
+
+				  	<div class="row">
+				   		<div class="col-25">
+				      		<label for="suggestions">Any Comments or Suggestions?</label>
+				    	</div>
+				    	<div class="col-75">
+				      		<textarea id="suggestions" name="suggestions" class="input-field" style="height: 50px" placeholder="Enter your comment here..."></textarea>
+				    	</div>
+				  	</div>
+
+				  	<button id="submit" type="submit">Submit</button>
+
+	  			</form>
+			</div>
+		</div> 
+	</div> 
+	<!-- CONTENT ENDS -->
+
+	</div>
+</body>
+</html>
